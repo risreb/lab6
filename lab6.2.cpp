@@ -8,19 +8,19 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    int num;
-    int result = 0;
 
+    int number;
     cout << "Введите целое число: " << endl;
-    cin >> num;
+    cin >> number;
 
-    while (num != 0)
-    {
-        result = result + num % 10;
-        num = num / 10;
+        for (int i = 1; i <= 10; i++)
+
+        {
+
+            cout << number << " х " << i << " = " << number * i << endl;
+
+        }
+
+        return 0;
+
     }
-
-    cout << "Сумма чисел: " << result << endl;
-
-    return 0;
-}
